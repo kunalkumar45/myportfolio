@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@900&family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 25px;
+}
+/* -------navigation-------- */
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    padding: 0 25px;
+    background: #f8f9fa;
+    z-index: 1;
+}
+.navbar .logo h2{
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+font-family: 'Merriweather', serif;
+}
+nav{
+    flex: 1;
+}
+nav ul{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-top: -20px;
+}
+nav ul li {
+    margin-right: 30px;
+
+}
+nav ul li a{
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+/* -------navigation burger------ */
+#burger {
+    position: absolute;
+    top: 0;
+    right: 15px;
+ }
+ 
+ #burger i {
+     visibility: hidden;
+     margin-right: 20px;
+     font-size: 30px;
+     cursor: pointer;
+ }
+ 
+ #burger i:hover {
+     color: black;
+ }
+ /* ------header--------  */
+ .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .col-2 {
+    flex-basis: 50%;
+    align-items: center;
+    min-width: 250px;
+}
+
+.col-2 img {
+    max-width: 85%;
+    padding:10px;
+    margin: 80px auto 0 auto;
+    
+}
+.col-2 h2{
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 100;
+}
+.col-2 p{
+    font-size: 20px;
+    padding: 20px 0;
+    margin-left: 20px;
+}
+.s-icon{
+    font-size: 25px;  
+    margin-left: 20px;  
+}
+.s-icon a{
+    color: #000;
+    text-decoration: none;
+}
+.s-icon .fa-brands,.fa-solid{
+    padding: 10px 0;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    
+}
+.s-icon .fa-brands:hover,.s-icon .fa-solid:hover{
+    transform: scale(1.5);
+}
+.col-2 .btn{
+    display: inline-block;
+    background: royalblue;
+    margin: 30px 0;
+    margin-left: 20px;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+.col-2 .btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.col-2 .btn:hover{
+    background: rgb(56, 80, 153);
+}
+/*-----about me ------  */
+.about{
+    background:#f8f9fa;
+    padding: 30px 0;
+}
+.title {
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 0;
+}
+.status p{
+    font-size: 20px;
+    padding: 0;
+}
+
+/* ------services------ */
+.services{
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+/* -----skills------- */
+.skills{
+    background:#f8f9fa;
+    padding: 30px 0;
+}
+.skills-bar{
+    width: 100%;
+    padding: 15px 30px;
+}
+.skills-bar .bar{
+    margin: 20px 0;
+}
+.skills-bar .bar:first-child{
+    margin-top: 0;
+}
+.skills-bar .bar .info{
+    margin-bottom: 5px;
+}
+.skills-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #979595;
+    border-radius: 10px;
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+}
+.bar .progress-line span::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: 0;
+    top: -10px;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color:#000 ;
+}
+.bar .progress-line span::after{
+    content: "80%";
+    position: absolute;
+    right: 0;
+    top: -29px;
+    color: #fff;
+    background: #000;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px ;
+    border-radius: 3px;
+}
+.bar .progress-line .html::after{
+    content: "85%";
+    position: absolute;
+    right: 0;
+    top: -29px;
+    color: #fff;
+    background: #000;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px ;
+    border-radius: 3px;
+}
+.bar .progress-line .css::after{
+    content: "85%";
+    position: absolute;
+    right: 0;
+    top: -29px;
+    color: #fff;
+    background: #000;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px ;
+    border-radius: 3px;
+}
+.bar .progress-line .bootstrap::after{
+    content: "60%";
+    position: absolute;
+    right: 0;
+    top: -29px;
+    color: #fff;
+    background: #000;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px ;
+    border-radius: 3px;
+}
+/*-------- projects -----------*/
+.projects{
+    padding: 30px 0;
+}
+.col-3{
+    flex-basis: 33%;
+    height: 180px;
+    align-items: center;
+    min-width: 250px;
+    background:#f8f9fa;
+    box-shadow:0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.col-3 h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.col-3 p{
+    padding: 10px 0;
+}
+.col-3:hover{
+    transform: translateY(-8px);
+}
+/*--------contact me---------*/
+.contact{
+    padding-top: 30px;   
+}
+.row-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.col-2 form{
+    width: 100%;
+}
+.col-2 input, textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 1px solid gray;
+    resize: none;
+    margin-bottom: 10px;
+}
+.col-2 label{
+    font-size: 18px;
+}
+.status-2 p{
+    font-size: 20px;
+    padding: 0 0 0 12px;
+}
+/*------footer------*/
+footer{
+    background:#f8f9fa;
+    padding: 30px 0 10px 0; 
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+footer p,strong{
+    padding: 5px;
+}
