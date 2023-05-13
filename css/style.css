@@ -61,7 +61,7 @@ nav ul li a:hover{
  }
  
  #burger i {
-     visibility: hidden;
+     display: none;
      margin-right: 20px;
      font-size: 30px;
      cursor: pointer;
