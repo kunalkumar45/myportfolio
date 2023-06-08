@@ -4,6 +4,10 @@
     } 
 }
 @media screen and (max-width:770px) {
+    *{
+        cursor:default;
+    }
+    
     .navbar ul {
         position: fixed;
         left: -100%;
@@ -33,7 +37,9 @@
     #burger i {
         line-height: 60px;
         display: block;
+        cursor: default;
     }
+    
     .col-2,
     .col-3{
         flex-basis: 100%;
@@ -45,6 +51,10 @@
         max-width: 100%;
         padding: 0;
         
+    }
+    .s-icon .fa-brands,.fa-solid{
+        cursor: default;
+ 
     }
 }
 
