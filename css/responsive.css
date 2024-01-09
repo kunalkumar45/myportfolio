@@ -1,0 +1,91 @@
+@media screen and (max-width:1200px) {
+    .col-2 h2 {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    * {
+        cursor: default;
+    }
+
+    p br {
+        display: none;
+    }
+
+
+    .navbar ul {
+        position: fixed;
+        left: -100%;
+        justify-content: center;
+        margin-top: 28px;
+        width: 100%;
+        background: #f8f9fa;
+        flex-direction: column;
+        text-align: center;
+        opacity: 1;
+        margin-left: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .navbar ul.active {
+        position: fixed;
+        left: 0;
+    }
+
+    .col-2 h2 {
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+
+    .navbar ul li {
+        padding: 10px 0;
+    }
+
+    #burger i {
+        line-height: 60px;
+        display: block;
+        cursor: default;
+    }
+
+    .col-2,
+    .col-3 {
+        flex-basis: 100%;
+    }
+
+    .col-2 h2 {
+        margin-top: 0px;
+    }
+
+    .col-2 img {
+        max-width: 100%;
+        padding: 0;
+
+    }
+
+    .s-icon .fa-brands,
+    .fa-solid {
+        cursor: default;
+
+    }
+}
+
+@media screen and (max-width:576px) {
+    .col-2 h2 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    .s-icon {
+        font-size: 18px;
+    }
+
+    .about {
+        padding: 30px 0;
+    }
+
+    .status p,
+    .status-2 p {
+        font-size: 15px;
+    }
+}
