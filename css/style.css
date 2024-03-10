@@ -290,6 +290,18 @@ nav ul li a:hover {
     padding: 1px 8px;
     border-radius: 3px;
 }
+.bar .progress-line .fremwork::after {
+    content: "60%";
+    position: absolute;
+    right: 0;
+    top: -29px;
+    color: #fff;
+    background: #000;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
 
 /*-------- projects -----------*/
 .projects {
