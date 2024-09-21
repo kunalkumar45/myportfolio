@@ -1,0 +1,98 @@
+<div class="navbar outer-shadow bg-black">
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <h2><a href="#home">KUNAL KUMAR</a></h2>
+      </div>
+      <ul id="menu" class="d-none d-md-flex">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <li class="toggleTheme" (click)="toggleTheme()">
+          <i
+            [ngClass]="isLight ? 'fa-solid fa-sun' : 'fa-solid fa-moon'"
+            class="text-decoration-none outer-shadow"
+          ></i>
+        </li>
+      </ul>
+      <div class="burger d-block d-md-none">
+        <i class="fa-solid fa-bars" (click)="open(content)"></i>
+      </div>
+      <div class="themeIconMob d-block d-md-none" (click)="toggleTheme()">
+        <i
+          [ngClass]="isLight ? 'fa-solid fa-sun' : 'fa-solid fa-moon'"
+          class="text-decoration-none outer-shadow"
+        ></i>
+      </div>
+    </nav>
+
+    <ng-template #content let-offcanvas>
+      <div class="container h-100 bg-black">
+        <div class="navbar d-block">
+          <div class="offcanvas-header">
+            <h2 class="title">
+              <a href="#home" (click)="offcanvas.dismiss('Cross click')"
+                >KUNAL KUMAR</a
+              >
+            </h2>
+            <div class="cross-icon">
+              <i
+                class="fa-solid fa-xmark"
+                (click)="offcanvas.dismiss('Cross click')"
+              ></i>
+            </div>
+          </div>
+          <div class="offcanvas-body pt-0">
+            <nav class="h-100">
+              <ul class="d-block d-md-none text-center list-inline p-0">
+                <li>
+                  <a
+                    href="#home"
+                    class="outer-shadow hover"
+                    (click)="offcanvas.dismiss('Cross click')"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="outer-shadow hover"
+                    (click)="offcanvas.dismiss('Cross click')"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="outer-shadow hover"
+                    (click)="offcanvas.dismiss('Cross click')"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="outer-shadow hover"
+                    (click)="offcanvas.dismiss('Cross click')"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="outer-shadow hover"
+                    (click)="offcanvas.dismiss('Cross click')"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>
