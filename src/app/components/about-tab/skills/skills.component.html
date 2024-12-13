@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let skill of skills; let i = index" class="col-md-6">
+      <div class="skills-bar">
+        <div class="bar">
+          <div class="info">
+            <span>{{ skill.name }}</span>
+          </div>
+          <div class="progress-line">
+            <span
+              [ngStyle]="{ width: skill.width }"
+              [ngClass]="skill.class"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

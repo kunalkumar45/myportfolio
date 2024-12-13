@@ -1,0 +1,30 @@
+<div class="py-4" id="portfolio">
+  <div class="section-title mb-0">
+    <p>PORTFOLIO</p>
+    <h2 class="text-center">Latest Works</h2>
+  </div>
+</div>
+<div class="container">
+  <ul ngbNav #nav="ngbNav" class="nav-tabs d-flex justify-content-center pb-4">
+    <li [ngbNavItem]="1">
+      <button ngbNavLink>All</button>
+      <ng-template ngbNavContent>
+        <app-all></app-all>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <button ngbNavLink>Web Application</button>
+      <ng-template ngbNavContent>
+        <app-web-app></app-web-app>
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <button ngbNavLink>E-Commerce</button>
+      <ng-template ngbNavContent>
+        <app-e-commerce></app-e-commerce>
+      </ng-template>
+    </li>
+  </ul>
+
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>

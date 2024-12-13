@@ -1,0 +1,119 @@
+.skills {
+    background: #f8f9fa;
+    padding: 30px 0;
+  }
+  
+  .skills-bar {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .skills-bar .bar {
+    margin: 20px 0;
+  }
+  
+  .skills-bar .bar:first-child {
+    margin-top: 0;
+  }
+  
+  .skills-bar .bar .info {
+    margin-bottom: 5px;
+  }
+  
+  .skills-bar .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #979595;
+    border-radius: 10px;
+  }
+  
+  .bar .progress-line span {
+    height: 100%;
+    width: 80%;
+    background: #2eb1ed;
+    position: absolute;
+    border-radius: 10px;
+  }
+  
+  .bar .progress-line span::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: 0;
+    top: -10px;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #2eb1ed;
+  }
+  
+  .bar .progress-line span::after {
+    content: "80%";
+    position: absolute;
+    right: 0;
+    top: -29px;
+    color: #fff;
+    background: #2eb1ed;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 3px;
+  }
+  
+  .bar .progress-line .html::after {
+    content: "85%";
+    position: absolute;
+    right: 0;
+    top: -29px;
+    color: #fff;
+    background: #2eb1ed;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 3px;
+  }
+  
+  .bar .progress-line .css::after {
+    content: "85%";
+    position: absolute;
+    right: 0;
+    top: -29px;
+    color: #fff;
+    background: #2eb1ed;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 3px;
+  }
+  
+  .bar .progress-line .backend::after {
+    content: "50%";
+    position: absolute;
+    right: 0;
+    top: -29px;
+    color: #fff;
+    background: #2eb1ed;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 3px;
+  }
+  .bar .progress-line .fremwork::after {
+    content: "60%";
+    position: absolute;
+    right: 0;
+    top: -29px;
+    color: #fff;
+    background: #2eb1ed;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 3px;
+  }
