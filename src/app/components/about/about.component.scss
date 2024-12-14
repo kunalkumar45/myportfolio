@@ -3,8 +3,8 @@
 }
 
 .my-pic {
-  width: 350px;
-  height: 350px;
+  max-width: 350px;
+  max-height: 350px;
   border-radius: 5px;
   object-fit: cover;
   margin-left: auto;
