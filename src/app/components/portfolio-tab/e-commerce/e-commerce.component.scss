@@ -3,6 +3,19 @@
   border-radius: 10px;
   margin-bottom: 30px;
   cursor: pointer;
+
+  animation: movedown 0.5s ease forwards;
+  opacity: 0;
+  @keyframes movedown {
+    0% {
+      opacity: 1;
+      transform: translateY(-25px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
   &:hover .projects-layer {
     transform: translateY(0);
   }
@@ -34,12 +47,17 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 0;
     transform: translateY(100%);
     transition: transform 0.5s ease;
-    h4,
+    h4 {
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+    }
     p {
       color: white;
+      font-size: 16px;
     }
     a {
       display: inline-flex;
@@ -49,6 +67,7 @@
       height: 35px;
       border-radius: 20px;
       color: white;
+      font-weight: 600;
 
       i {
         margin-left: 8px;
