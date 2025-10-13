@@ -32,12 +32,14 @@
   }
 }
 .about-info {
+  font-family: poppins, sans-serif;
   span {
-    font-weight: 600;
+    font-weight: 500;
+    color: #2eb1ed;
   }
   p {
-    font-size: 18px;
-    text-transform: capitalize;
+    font-size: 17px;
+    text-align: justify;
   }
 }
 
